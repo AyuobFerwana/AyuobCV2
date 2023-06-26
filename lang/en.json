@@ -1,0 +1,83 @@
+{
+    "//": "Header",
+
+    "name": "Ayuob Ferwana",
+    "home ": "Home",
+    "about": "About",
+    "skill ": "Skills",
+    "experiences ": "Experiences",
+    "portfolio ": "Portfolio",
+    "pricing ": "Pricing",
+    "contact ": "Contact",
+
+    "//": "About",
+
+    "hello": "Hello I'm",
+    "firstName": "Ayuob Ferwana",
+    "Expertise": "Backend Programmer",
+    "aboutme": "About Me",
+    "pareg": "Hi, I am Ayoub a web developer with 2+ years of experience in Laravel. I have rich experience in MVC and database management. My experience includes programming and maintaining user-friendly websites, integrating third party APIs, and optimizing website performance.",
+
+    "//": "What i do",
+
+    "what": "What I do",
+    "Database": "Database Analysis",
+    "projects": "I have the ability and sufficient experience in analyzing a database, I provide excellent solutions for web projects.",
+    "web":"Web Development",
+
+    "laravel":" I have a strong skill set and experience in creating powerful and efficient web applications. I have deep understanding of programming languages like My SQL, JS, HTML, CSS, Node.js , PHP and Laravel.",
+    "server":"Server Management",
+    "smoothly":"Thanks to my experience and extensive knowledge in uploading web projects to servers, I can operate and maintain the web infrastructure, and I can make the website work smoothly.",
+
+    "Technical":"Technical Skills",
+    "Professional":"Professional Skills",
+
+    "educat":"Education",
+    "work":"Work Experience",
+
+    "Recent":"Portfolio",
+    "category":"All Categories",
+    "phpLaravel":"PHP Laravel",
+    "node.js":"Node.js",
+
+    "//":"pricee",
+
+    "price":"Pricing",
+    "full":"Full-time-work",
+    "available":"iam available for full time jobs",
+    "deve":"Web Development",
+    "langu":"PHP Laravel",
+    "node":"Node.js",
+    "data":"Database Analysis",
+    "ser":"Servers Management",
+
+
+    "fixed":"Fix problems on websites",
+    "fixedavailable":"I am Available to solve problems",
+
+    "hourley":"Work by the hour",
+    "hourWork":"I am available to work on projects by the hour",
+
+    "Featured":"Featured Posts",
+    "Contact":"Contact Me",
+
+    "Address":"Address",
+    "Email":"Email",
+    "Phone":"Phone",
+
+
+    "//":"Message",
+    "FirstNa":"First Name",
+    "LastNa":"Last Name",
+    "yourEmail":"Your Email",
+    "Yourmess":"Your Message",
+    "SendMes":"Send Message"
+
+
+
+
+
+
+
+
+}
