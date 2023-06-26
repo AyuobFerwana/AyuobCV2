@@ -89,6 +89,9 @@
 
                   </a>
                   <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    @php
+                        $messages = App\Models\Message::latest()->limit(3)->get();
+                    @endphp
                     @foreach ($messages as $mess)
 
                     <a href="{{ route('readMess',['message'=>$mess->id]) }}" class="dropdown-item">

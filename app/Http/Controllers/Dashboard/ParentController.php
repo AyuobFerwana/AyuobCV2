@@ -15,7 +15,7 @@ class ParentController extends Controller
 
     public function messageNav(){
 
-        $messages = Message::latest()->take(3)->get()->reverse();;
+        $messages = Message::latest()->limit(3)->get();
         return response()->view('dashboard.parent' , compact('messages'));
     }
 }
