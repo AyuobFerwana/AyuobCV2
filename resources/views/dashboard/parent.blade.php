@@ -241,7 +241,11 @@
 
 
                         <li class="nav-item">
-                            <a href="{{ route('cv.show') }}" class="nav-link">
+                            @php
+                            $url = route('cv.show', ['locale' => 'en']);
+                        @endphp
+
+                            <a href="{{ $url }}" class="nav-link">
                                 <i class="fas fa-copyright"></i>
                                 <p>
                                     CV

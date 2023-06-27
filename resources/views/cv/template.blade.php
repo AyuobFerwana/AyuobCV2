@@ -172,10 +172,10 @@
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i
                                         class="fa fa-envelope"></i><a href="mailto:">{{ $about->email }}</a></li>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i
-                                        class="fa fa-phone"></i><a href="callto:">+972 {{ $about->phone }}</a></li>
+                                        class="fa fa-phone"></i><a href="callto:">( +972 ) {{ $about->phone }}</a></li>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i
                                         class="fa fa-map-marker"></i>
-                                    <address>{{ $about->address }}</address>
+                                    <address>{{ __('addres') }}</address>
                                 </li>
                             </ul>
 
@@ -726,7 +726,7 @@
                                     <div class="each-info">
                                         <h4>{{ __('Address') }}</h4>
                                         <address>
-                                            {{ $about->address }}
+                                            {{ __('addres') }}
                                         </address>
                                     </div>
                                 </div>
@@ -751,7 +751,7 @@
                                     </div>
                                     <div class="each-info">
                                         <h4>{{ __('Phone') }}</h4>
-                                        <a href="callto:(880)-8976-987">{{ $about->phone }}</a>
+                                        <a href="#">( +972 ) {{ $about->phone }}</a>
                                     </div>
                                 </div>
                             </div>

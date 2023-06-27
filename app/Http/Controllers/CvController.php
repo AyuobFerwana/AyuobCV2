@@ -13,6 +13,7 @@ class CvController extends Controller
 {
     public function show()
     {
+
         $about = About::first();
         $skills = Skill::all();
         $proSkills = ProSkill::all();
