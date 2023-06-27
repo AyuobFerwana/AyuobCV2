@@ -170,7 +170,7 @@
 
                             <ul>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i
-                                        class="fa fa-envelope"></i><a href="mailto:">{{ $about->email }}</a></li>
+                                        class="fa fa-envelope"></i><a href="https://mail.google.com/mail/u/3/#label/info%40ayoubferwana.online">{{ $about->email }}</a></li>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i
                                         class="fa fa-phone"></i><a href="callto:">( +972 ) {{ $about->phone }}</a></li>
                                 <li class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i
@@ -876,29 +876,15 @@
         });
 
         function toggleTheme() {
-    var body = document.getElementsByTagName("body")[0];
-    var darkMode = document.getElementById("dark-mode");
-    var lightMode = document.getElementById("light-mode");
+    var body = document.body;
     var snowflakeIcon = document.getElementById("snowflake-icon");
     var moonIcon = document.getElementById("moon-icon");
 
-    if (body.classList.contains("dark-vertion")) {
-        // Switch to white theme
-        body.classList.remove("dark-vertion");
-        body.classList.add("white-vertion");
-        darkMode.style.display = "none";
-        lightMode.style.display = "block";
-        snowflakeIcon.style.display = "none";
-        moonIcon.style.display = "inline";
-    } else {
-        // Switch to dark theme
-        body.classList.remove("white-vertion");
-        body.classList.add("dark-vertion");
-        darkMode.style.display = "block";
-        lightMode.style.display = "none";
-        snowflakeIcon.style.display = "inline";
-        moonIcon.style.display = "none";
-    }
+    body.classList.toggle("dark-vertion");
+    body.classList.toggle("white-vertion");
+
+    snowflakeIcon.style.display = snowflakeIcon.style.display === "none" ? "inline" : "none";
+    moonIcon.style.display = moonIcon.style.display === "none" ? "inline" : "none";
 }
 
     </script>

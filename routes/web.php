@@ -30,10 +30,15 @@ Route::middleware('auth')->group(function () {
 
 
 // CV
-Route::redirect('/', app()->getLocale() . '/')->name('cv.show');
-Route::middleware('locale')->prefix('{locale}')->group(function () {
-    Route::get('/', 'CvController@show')->name('cv.show');
+Route::get('/', function () {
+    return redirect('/' . app()->getLocale());
 });
+
+Route::middleware('locale')->group(function () {
+    Route::get('/{locale}', 'CvController@show')->name('cv.show');
+});
+
+
 
 // chat
 Route::post('/chat', [MessageController::class, 'chatForm'])->name('chatForm');
