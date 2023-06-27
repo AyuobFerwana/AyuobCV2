@@ -30,8 +30,9 @@ Route::middleware('auth')->group(function () {
 
 
 // CV
+Route::redirect('/', app()->getLocale() . '/')->name('cv.show');
 Route::middleware('locale')->prefix('{locale}')->group(function () {
-    Route::get('/', fn ($locale) => app()->make(CvController::class)->show($locale))->name('cv.show');
+    Route::get('/', 'CvController@show')->name('cv.show');
 });
 
 // chat
