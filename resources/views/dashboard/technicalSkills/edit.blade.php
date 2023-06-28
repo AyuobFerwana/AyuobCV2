@@ -64,7 +64,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
     let formData = new FormData();
     formData.append('_method', 'PUT');
-    formData.append('name', document.getElementById('name').value);
+    formData.append('name_en', document.getElementById('name_en').value);
+    formData.append('name_ar', document.getElementById('name_ar').value);
     formData.append('skills', document.getElementById('skills').value);
     axios.post('{{ route('user.update', $user->id) }}', formData)
         .then(function(response) {
