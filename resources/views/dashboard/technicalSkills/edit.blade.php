@@ -21,8 +21,13 @@
                             @csrf
                             <div class="form-group">
                                 <label for="SkillsName">Skills Name</label>
-                                <input type="text" class="form-control" value="{{ $user->name }}" id="name"
-                                    placeholder="Enter Skills Name">
+                                <input type="text" class="form-control" id="name_en" value="{{ $user->name_en }}" placeholder="Enter Skills Name_En">
+                                <br>
+
+                                <label for="SkillsName">أسم المهاره</label>
+
+                                <input type="text" class="form-control" id="name_ar" value="{{ $user->name_ar }}" placeholder="Enter Skills Name_Ar">
+
 
                                 <br>
                                 <label for="jsRange">Skills Range</label>
