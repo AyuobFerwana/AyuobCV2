@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class About extends Model
 {
     use HasFactory;
+
+    const Image_Url = '/dash/dist/img/ayoub.png';
     protected $fillable = [
         'super_en',
         'super_ar',

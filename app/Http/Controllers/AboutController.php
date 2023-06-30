@@ -25,9 +25,10 @@ class AboutController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create(Request $request)
+    public function create(Request $request , About $about)
     {
-        return response()->view('dashboard.about.create');
+        $abouts = About::all();
+        return response()->view('dashboard.about.create' , compact('abouts'));
     }
 
     /**

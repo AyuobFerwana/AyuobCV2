@@ -13,10 +13,11 @@ class ParentController extends Controller
     //     return response()->view('dashboard.parent');
     // }
 
-    public function messageNav(){
+    public function messageNav()
+    {
 
-       $about = About::all();
+        $about = About::first();
         $messages = Message::latest()->limit(3)->get();
-        return response()->view('dashboard.parent' , compact('messages' , 'about'));
+        return response()->view('dashboard.parent', compact('messages', 'about'));
     }
 }
