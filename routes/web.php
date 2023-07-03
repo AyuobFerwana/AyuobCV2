@@ -56,6 +56,10 @@ Route::middleware('auth')->prefix('dashboard')->group(function () {
     Route::get('Contact-box', [ContactController::class, 'contactBox'])->name('contactBox');
     Route::get('read-mess/{message}', [ContactController::class, 'readMess'])->name('readMess');
     Route::delete('content/delete', [ContactController::class, 'destroy'])->name('content.destroy');
+    Route::delete('content/destroyAll', [ContactController::class, 'destroyAll'])->name('content.destroyAll');
+
+
+
 });
 
 // login
